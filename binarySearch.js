@@ -31,3 +31,14 @@
 // let my_list = [1, 3, 5, 7, 9]
 //
 // console.log(binarySearch(my_list, 7))
+
+//exercise 1.1
+//7 times is the maximum number of steps it would take
+//exercise 1.2
+//8 times is the maximum number of steps it would take
+
+//1.3
+//O(logn)
+
+//1.4
+//O(n)
