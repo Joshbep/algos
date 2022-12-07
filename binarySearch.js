@@ -42,3 +42,6 @@
 
 //1.4
 //O(n)
+
+//2.1
+//do list becasue insert is O(1) and read is O(n)
