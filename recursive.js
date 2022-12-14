@@ -7,3 +7,13 @@
 //Answer: The stack grows forever. Each program has a limited
 //amount of space on the call stack. When your program runs
 //out of space (which it eventually will), it will exit with a stackoverflow error.
+
+//4.1
+const sum = (list) => {
+  if(list == []) {
+    return 0
+  }
+  return list[0] + sum(list[1:])
+}
+
+sum()
