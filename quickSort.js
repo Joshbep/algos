@@ -43,3 +43,8 @@
 //O(1)
 //4.8
 //(n^2)
+
+//quicksort is faster than merge sort
+//The constant almost never matters for simple search versus binary
+//search, because O(log n) is so much faster than O(n) when your list
+//gets big.
