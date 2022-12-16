@@ -9,9 +9,16 @@
 //not consistent
 //consistent
 
-const phoneBook = new Map();
+// const phoneBook = new Map();
+//
+// phoneBook.set("jenny", "8675309")
+// phoneBook.set("emergency", "911")
+//
+// console.log(phoneBook.get("emergency"));
 
-phoneBook.set("jenny", "8675309")
-phoneBook.set("emergency", "911")
-
-console.log(phoneBook.get("emergency"));
+//5.5
+//c
+//5.6
+//b
+//5.7
+//d
