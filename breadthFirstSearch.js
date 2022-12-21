@@ -63,3 +63,5 @@
 //exercise
 //shower
 //get dressed
+//6.5
+//a and c
