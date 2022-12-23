@@ -12,3 +12,26 @@
 //thats a cycle!
 
 //Dijkstra’s algorithm only works with directed acyclic graphs, called DAGs for short.
+
+const graph = {};
+
+graph["start"] = {}
+graph["start"]["a"] = 6
+graph["start"]["b"] = 2
+
+graph["a"] = {}
+graph["a"]["fin"] = 1
+
+graph["b"] = {}
+graph["b"]["a"] = 3
+graph["b"]["fin"] = 1
+
+graph['fin'] = {};
+
+const costs = {}
+
+costs["a"] = 6
+costs["b"] = 2
+consts["fin"] = Infinity;
+
+const paretns = {}
