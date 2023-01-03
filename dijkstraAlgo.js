@@ -80,3 +80,8 @@ console.log(costs, parents, graph)
 //60
 //c
 //no shortest path possible negative weight cycle
+
+//breadth first search is used to calcultae the shortest path for an unweighted graph
+//Dijkstra’s algorithm is used to calculate the shortest path for a weighted graph
+//Dijkstra’s algorithm works when all weights are positive
+//if you have negative weights use the Bellman-Ford algorithm.
