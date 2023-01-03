@@ -72,3 +72,11 @@ while(node != null) {
 }
 
 console.log(costs, parents, graph)
+
+//7.1
+//a
+//8
+//b
+//60
+//c
+//no shortest path possible negative weight cycle
