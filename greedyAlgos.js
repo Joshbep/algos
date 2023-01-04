@@ -10,3 +10,12 @@
 //Answer: Keep picking the activity with the highest point value that
 //you can still do in the time you have left. Stop when you can’t do
 //anything else. No, this won’t give you the optimal solution.
+
+
+//exercises
+//8.3
+//no
+//8.4
+// Greedy
+//8.5
+//Greedy
