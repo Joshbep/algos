@@ -35,3 +35,11 @@
 //• Can you restate your problem as the set-covering problem or the
 //traveling-salesperson problem? Then your problem is definitely
 //NP-complete.
+
+//exercies
+//8.6
+//yes
+//8.7
+//yes
+//8.8
+//yes
