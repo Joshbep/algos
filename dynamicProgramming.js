@@ -10,3 +10,7 @@
 //With the dynamic-programming solution, you
 //either take the item or not. There’s no way for it to figure out that you
 //should take half an item.
+
+//exercises
+//9.2
+//water food camera
