@@ -14,3 +14,12 @@
 //exercises
 //9.2
 //water food camera
+
+
+//notes
+
+//every dynamic programming solution invlolves a grid
+//the values in the calls are usually what your're trying to optimize
+//for the knapsack problem, the values were the value of the goods
+
+//each cell is subproblem, so think about how you can divide your problem into subproblems. That will help you figure out what the axes are
