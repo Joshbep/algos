@@ -23,3 +23,7 @@
 //for the knapsack problem, the values were the value of the goods
 
 //each cell is subproblem, so think about how you can divide your problem into subproblems. That will help you figure out what the axes are
+
+//exercises
+//9.3
+//3
