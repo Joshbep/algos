@@ -65,3 +65,14 @@
 
 //nested loops for example are O(n^2)
 //O(n^2)
+
+
+//simplifying BIG O expressions
+
+//constants don't matter
+//smaller terms don't matter
+
+
+//BIG O Shorthands
+
+//arithmetic operations are constant
