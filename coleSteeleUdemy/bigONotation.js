@@ -81,4 +81,19 @@
 //in a loop, the complexity is the length of the loop times the complexity of whatever happens inside of the loop
 
 
-//
+//quiz 1 on Big O
+
+//1
+// O(n)
+
+//2
+//O(n)
+
+//3
+//O(1)
+
+//4
+//O(n^3)
+
+//5
+//O(n)
