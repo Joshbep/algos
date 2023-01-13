@@ -147,3 +147,15 @@
 //O(n)
 //5
 //O(n)
+
+//logarithms
+
+//w'eve encountered O(1), O(n), O(n^2)
+
+//sometimes big O expressions involve complex mathematical expressions
+// One that appears more often than you might like is logaithm
+
+//wait, whats a log?
+//log base value 2(value) = exponent ------> 2^exponent = value
+
+//same as 1/2 = .5 or 2 * .5 = 1
