@@ -76,3 +76,9 @@
 //BIG O Shorthands
 
 //arithmetic operations are constant
+//variables assignment is constant
+//accessing elements in an array(by index) or object (by key) is constant
+//in a loop, the complexity is the length of the loop times the complexity of whatever happens inside of the loop
+
+
+//
