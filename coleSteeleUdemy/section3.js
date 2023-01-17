@@ -40,3 +40,14 @@
 //removal it depends
 
 //push and pop always faster than shift and unshift
+
+//Big O of Array operations
+//push O(1)
+//pop O(1)
+//shift O(N)
+//unshiftO(N)
+//concat O(N)
+//slice O(N)
+//splice O(N)
+//sort O(N * log n)
+//forEacg/map/filter/reduce/etc. - O(N)
