@@ -33,7 +33,21 @@
 // - ints?
 // - floats?
 // - what about string for large numbers
-//3. 
+//3.
 //-int? float? string?
 //4.
 //5.
+
+//EXPLORE CONCRETE EXAMPLES
+//start with simple examples
+//progress to more complex examples
+//explore examples with empty inputs
+//explore examples with invalid inputs
+
+//write a function which takes in a string and return counts of each character in the string
+
+//CharCount("aaaa"); //{a:4}
+//charCount("hello"); //{h:1, e:1, l:2, o:1}
+
+
+//BREAK IT DOWN
