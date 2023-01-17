@@ -56,7 +56,7 @@
 //and helps you catch any lingering conceptual issues or misunderstandings before you dive in and have to worry about details
 
 //write a function which takes in a string and return counts of each character in the string
-function charCount(str){
+//function charCount(str){
   //make object to return at end
   //loop over string, for each charater..
     //if the char is a number/letter AND  key in object, add one to count
@@ -64,4 +64,39 @@ function charCount(str){
     //if character is something else (space, period, etc...) don't do anything
 
   //return object at end
+//}
+
+//SOLVE/SIMPLIFY
+
+//SOLVE THE PROBLEM
+//if you can't
+//SOLVE A SIMPLER PROBLEM
+
+//SIMPLIFY
+//find the core difficulty in what you're tring to do
+//temporarily ignore that diffulty
+//write a simplified solution
+//then incorporate that difficulty back in
+
+//write a function which takes in a string and return counts of each character in the string
+function charCount(str){
+  //make object to return at end
+  let result = {};
+  //loop over string, for each charater..
+  for(let i = 0; i < str.length; i++) {
+    let char = str[i].toLowerCase()
+    //if the char is a number/letter AND  key in object, add one to count
+    if(result[char] > 0){
+      result[char]++;
+    }
+    //if the char is a number/letter AND not in object, add it and set the value to 1
+    else {
+      result[char] = 1;
+    }
+  }
+    //if character is something else (space, period, etc...) don't do anything
+
+  //return object at end
+  return result
 }
+console.log(charCount("Hi there!"))
