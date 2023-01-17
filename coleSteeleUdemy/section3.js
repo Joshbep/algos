@@ -51,3 +51,13 @@
 //splice O(N)
 //sort O(N * log n)
 //forEacg/map/filter/reduce/etc. - O(N)
+
+
+//arrays quiz
+
+//1
+//a
+//2
+//b
+//3
+//c
