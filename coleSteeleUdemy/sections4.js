@@ -51,3 +51,17 @@
 
 
 //BREAK IT DOWN
+//explicity write out the steps you need to take.
+//this forces you to think about the code you'll write before you write it
+//and helps you catch any lingering conceptual issues or misunderstandings before you dive in and have to worry about details
+
+//write a function which takes in a string and return counts of each character in the string
+function charCount(str){
+  //make object to return at end
+  //loop over string, for each charater..
+    //if the char is a number/letter AND  key in object, add one to count
+    //if the char is a number/letter AND not in object, add it and set the value to 1
+    //if character is something else (space, period, etc...) don't do anything
+
+  //return object at end
+}
