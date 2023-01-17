@@ -21,3 +21,22 @@
 //.values - O(n)
 //.entries - O(n)
 //hasOwnProperty - O(1)
+
+//space quiz
+//1
+//O(1)
+//2
+//O(1)
+//3
+//O(1)
+
+//when to use arrays?
+//---when you need order
+//when you need fast access/insertion and removal (sort of)
+
+//access O(1)
+//searching O(N)
+//insertion it depends
+//removal it depends
+
+//push and pop always faster than shift and unshift
