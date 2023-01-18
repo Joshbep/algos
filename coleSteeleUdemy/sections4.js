@@ -79,24 +79,51 @@
 //then incorporate that difficulty back in
 
 //write a function which takes in a string and return counts of each character in the string
-function charCount(str){
-  //make object to return at end
+// function charCount(str){
+//   //make object to return at end
+//   let result = {};
+//   //loop over string, for each charater..
+//   for(let i = 0; i < str.length; i++) {
+//     let char = str[i].toLowerCase()
+//     //if the char is a number/letter AND  key in object, add one to count
+//     if(result[char] > 0){
+//       result[char]++;
+//     }
+//     //if the char is a number/letter AND not in object, add it and set the value to 1
+//     else {
+//       result[char] = 1;
+//     }
+//   }
+//     //if character is something else (space, period, etc...) don't do anything
+//
+//   //return object at end
+//   return result
+// }
+// console.log(charCount("Hi there!"))
+
+
+// REFACTORING QUESTIONS
+// - can you check the results?
+// - can you derive the result differently?
+// - can you understand it at a glance
+// - can you use the result or method for some other problem?
+// - can you improve the performance of your solution?
+// - can you think of other ways to refactor?
+// - how have other people solved this problem?
+
+function charCount(str) {
   let result = {};
-  //loop over string, for each charater..
-  for(let i = 0; i < str.length; i++) {
-    let char = str[i].toLowerCase()
-    //if the char is a number/letter AND  key in object, add one to count
-    if(result[char] > 0){
-      result[char]++;
-    }
-    //if the char is a number/letter AND not in object, add it and set the value to 1
-    else {
-      result[char] = 1;
+  for(let char of str) {
+    char = char.toLowestCase();
+    if(/[a-z0-9]/.test(char)) {
+      if(result[char] > 0) {
+        result[char]++;
+      } else {
+        result[char] = 1;
+      }
     }
   }
-    //if character is something else (space, period, etc...) don't do anything
-
-  //return object at end
   return result
 }
-console.log(charCount("Hi there!"))
+
+console.log(charCount('hello hi'))
