@@ -114,7 +114,7 @@
 function charCount(str) {
   let result = {};
   for(let char of str) {
-    char = char.toLowestCase();
+    char = char.toLowerCase();
     if(/[a-z0-9]/.test(char)) {
       if(result[char] > 0) {
         result[char]++;
@@ -126,4 +126,4 @@ function charCount(str) {
   return result
 }
 
-console.log(charCount('hello hi'))
+console.log(charCount('hello hi 99!'))
