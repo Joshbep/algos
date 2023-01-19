@@ -130,6 +130,7 @@ function charCount(str) {
   let result = {};
   for(let char of str) {
     char = char.toLowerCase();
+    //regular expression
     if(/[a-z0-9]/.test(char)) {
       result[char] == ++result[char]  || 1;
     }
@@ -138,3 +139,14 @@ function charCount(str) {
 }
 
 console.log(charCount('hello hi 99!'))
+
+//regular expressions can make performance vary
+
+
+//RECAP
+//understand the problem
+//explore concrete examples
+//break it down
+//solve/simplify
+//look back and refactor
+//
