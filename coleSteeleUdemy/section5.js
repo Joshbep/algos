@@ -76,25 +76,40 @@
 //accept two strings
 //maybe nested for loops?
 //try frequency counter
-function anagram(str1, str2) {
-  if(first.length !== second.length){
-    return false
-  }
-  const lookup = {}
+// function anagram(str1, str2) {
+//   if(first.length !== second.length){
+//     return false
+//   }
+//   const lookup = {}
+//
+//   for(let i = 0; i < first.length; i++){
+//     let letter = first[i]
+//
+//     lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
+//   }
+//
+//   for(let i = 0; i < second.length; i++) {
+//     let letter = second[i];
+//     if(!lookup[letter]){
+//       return false
+//     } else {
+//       lookup[letter] -= 1;
+//     }
+//   }
+//   return true;
+// }
 
-  for(let i = 0; i < first.length; i++){
-    let letter = first[i]
+//section 5 multiple pointers
+//create pointers or values and move towards the begining end or middle
 
-    lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
-  }
+//sumzero
 
-  for(let i = 0; i < second.length; i++) {
-    let letter = second[i];
-    if(!lookup[letter]){
-      return false
-    } else {
-      lookup[letter] -= 1;
+function sumZero(arr) {
+  for(let i =0; i < arr.length; i++) {
+    for(let j = i+1; j< arr.lenght; j++) {
+      if(arr[i] + arr[j] === 0) {
+        return [arr[i], arr[j]]
+      }
     }
   }
-  return true;
 }
