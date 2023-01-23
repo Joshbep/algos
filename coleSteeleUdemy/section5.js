@@ -141,16 +141,41 @@
 
 //countUniqueValue
 
-function countUniqueValue(arr) {
-  if(arr.length === 0) return 0
-  let i = 0;
-  for(let j = 1; j < arr.length; j++) {
-    if(arr[i] !== arr[j]) {
-      i++;
-      arr[i]= arr[j]
+// function countUniqueValue(arr) {
+//   if(arr.length === 0) return 0
+//   let i = 0;
+//   for(let j = 1; j < arr.length; j++) {
+//     if(arr[i] !== arr[j]) {
+//       i++;
+//       arr[i]= arr[j]
+//     }
+//   }
+//   return i +1 ;
+// }
+//
+// console.log(countUniqueValue([1, 1, 1, 2, 2, 3, 4, 5, 5, 5, 6, 7]))
+//time - O(n)
+//space O(1)
+
+//sliding window
+
+//maxSubArraySum
+
+function maxSubArraySum(arr, num) {
+  if(num > arr.length) {
+    return null;
+  }
+  let max = -Infinity;
+  for(let i = 0; i < arr.length - num + 1; i++) {
+    temp = 0
+    for(let j = 0; j < num; j++) {
+      temp += arr[i+j];
+    }
+    if(temp > max) {
+      max = temp;
     }
   }
-  return i +1 ;
+  return max;
 }
 
-console.log(countUniqueValue([1, 1, 1, 2, 2, 3, 4, 5, 5, 5, 6, 7]))
+console.log(maxSubArraySum([2,6,9,2,1,8,5,6,3], 3))
