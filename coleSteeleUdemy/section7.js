@@ -47,11 +47,26 @@
 
 //first recursive function
 
-function countDown(num) {
-  if(num <=0 ){
-    console.log("all done!");
-    return;
-  }
-  num--;
-  countDown(num);
+// function countDown(num) {
+//   if(num <=0 ){
+//     console.log("all done!");
+//     return;
+//   }
+//   num--;
+//   countDown(num);
+// }
+
+//recursion quiz
+//1. a. the call stack
+//2. a. a situation when the recursion ends
+
+//second recursive function
+
+function sumRange(num) {
+  if(num === 1) return 1;
+  return num + sumRange(num-1)
 }
+
+//can you spot base case?
+//do you notice the different input?
+//what would happen if we didn't return
