@@ -4,11 +4,17 @@
 //so return base case
 //return base to exponent
 
+//regular
+// function power(base, exponent){
+//     if(exponent === 0) return 1
+//     return base ** power
+// }
 
+//recursive
 // function power(base, exponent){
 //     if(exponent === 0) return 1
 //     return base * power(base,exponent-1);
-}
+// }
 // 2 * (power(2, 4 -1))
 //           2, 3
 // 2     *     8 = 16
