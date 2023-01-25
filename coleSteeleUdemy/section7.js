@@ -95,21 +95,42 @@
 //stack overflow
 
 //helper function
+//an outer function which is not recursive which
+//calls an inner function which is recursive
 
-function collectOdds(nums) {
-  let result = []
 
-  function helper(helperInput) {
-    if(helperInput.length === 0) {
-      return
-    }
+// function collectOdds(nums) {
+//   let result = []
+//
+//   function helper(helperInput) {
+//     if(helperInput.length === 0) {
+//       return
+//     }
+//
+//     if(helperInput[0] % 2 !== 0){
+//       result.push(helperInput[0])
+//     }
+//
+//     helper(helperInput.slice(1))
+//   }
+//   helper(arr)
+//   return result;
+// }
 
-    if(helperInput[0] % 2 !== 0){
-      result.push(helperInput[0])
-    }
 
-    helper(helperInput.slice(1))
+//Pure Recursion
+
+function collectOddValues(arr){
+  let newArr = [];
+
+  if(arr.length === 0) {
+    return newArr;
   }
-  helper(arr)
-  return result;
+
+  if(arr[0] % 2 !== 0) {
+    newArr.push(arr[0]);
+  }
+
+  newArr = newArr.concat(collectOddValues(arr.slice(1)))
+  return newArr;
 }
