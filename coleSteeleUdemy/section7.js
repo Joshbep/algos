@@ -83,8 +83,15 @@
 // }
 // console.log(factorial(3))
 
-function factorial(num) {
-  if(num === 1) return 1
-  return num * factorial(num - 1)
-}
-console.log(factorial(4))
+// function factorial(num) {
+//   if(num === 1) return 1
+//   return num * factorial(num - 1)
+// }
+// console.log(factorial(4))
+
+//where things go wrong
+//no base case
+//forgetting to return or returning the wrong thing
+
+
+//
