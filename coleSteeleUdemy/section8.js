@@ -50,9 +50,15 @@
 // console.log(productOfArray([1,2,3,4]))
 
 
-function recursiveRange(num) {
-  if(num === 0) return 0
-  return num + recursiveRange(num - 1);
-}
+// function recursiveRange(num) {
+//   if(num === 0) return 0
+//   return num + recursiveRange(num - 1);
+// }
+//
+// console.log(recursiveRange(6))
 
-console.log(recursiveRange(6))
+function fib(num) {
+  if(num <= 2) return 1;
+  return fib(num-1) + fib(num-2)
+}
+console.log(fib(4))
