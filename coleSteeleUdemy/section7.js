@@ -92,6 +92,24 @@
 //where things go wrong
 //no base case
 //forgetting to return or returning the wrong thing
+//stack overflow
 
+//helper function
 
-//
+function collectOdds(nums) {
+  let result = []
+
+  function helper(helperInput) {
+    if(helperInput.length === 0) {
+      return
+    }
+
+    if(helperInput[0] % 2 !== 0){
+      result.push(helperInput[0])
+    }
+
+    helper(helperInput.slice(1))
+  }
+  helper(arr)
+  return result;
+}
