@@ -35,3 +35,24 @@
 // }
 //
 // console.log(factorial(4))
+
+
+//understand problem
+//I want to return the product of an array of numbers
+// if arr is [1,2,3] do 1 * 2 = 2, 2*3 = 6 return 6
+//return base case if arr.length = 0
+//return factorial solution
+// function productOfArray(arr) {
+//   if(arr.length === 0) return 1;
+//   return arr[0] * productOfArray(arr.slice(1));
+// }
+//
+// console.log(productOfArray([1,2,3,4]))
+
+
+function recursiveRange(num) {
+  if(num === 0) return 0
+  return num + recursiveRange(num - 1);
+}
+
+console.log(recursiveRange(6))
