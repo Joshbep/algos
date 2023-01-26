@@ -48,9 +48,9 @@
 // }
 
 
-function capitalizeFirst (str) {
-  let newString = str.charAt(0).toUpperCase() + str.slice(1);
-  return newString
-}
-
-console.log(capitalizeFirst("grow"))
+// function capitalizeFirst (str) {
+//   let newString = str.charAt(0).toUpperCase() + str.slice(1);
+//   return newString
+// }
+//
+// console.log(capitalizeFirst("grow"))
