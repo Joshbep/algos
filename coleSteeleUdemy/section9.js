@@ -28,8 +28,29 @@
 //
 // }
 
-function someRecursive(arr, callback) {
-  if(arr.length === 0) return false;
-  if(callback(arr[0])) return true;
-  return someRecursive(arr.slice(1), callback);
+// function someRecursive(arr, callback) {
+//   if(arr.length === 0) return false;
+//   if(callback(arr[0])) return true;
+//   return someRecursive(arr.slice(1), callback);
+// }
+
+
+// function flatten(oldArr) {
+//   let newArr = []
+//   for(let i =0; i <oldArr.length; i++) {
+//     if(Array.isArray(oldArr[i])){
+//       newArr = newArr.concat(flatten(oldArr[i]))
+//     } else {
+//       newArr.push(oldArr[i])
+//     }
+//     return newArr;
+//   }
+// }
+
+
+function capitalizeFirst (str) {
+  let newString = str.charAt(0).toUpperCase() + str.slice(1);
+  return newString
 }
+
+console.log(capitalizeFirst("grow"))
