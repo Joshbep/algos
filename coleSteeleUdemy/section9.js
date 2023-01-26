@@ -11,7 +11,7 @@
 // }
 //
 // console.log(reverse('hey'))
-// 
+//
 // function isPalindrome(str) {
 //   let reverse = str.split("").reverse().join("");
 //   if (str === reverse) {
@@ -27,3 +27,9 @@
 //   if(str[0] === str.slice(-1)) return isPalindrome(str.slice(1, -1))
 //
 // }
+
+function someRecursive(arr, callback) {
+  if(arr.length === 0) return false;
+  if(callback(arr[0])) return true;
+  return someRecursive(arr.slice(1), callback);
+}
