@@ -11,3 +11,19 @@
 // }
 //
 // console.log(reverse('hey'))
+// 
+// function isPalindrome(str) {
+//   let reverse = str.split("").reverse().join("");
+//   if (str === reverse) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+//
+// function isPalindrome(str) {
+//   if(str.length === 1) return true;
+//   if(str.length === 2) return str[0] === str[1]
+//   if(str[0] === str.slice(-1)) return isPalindrome(str.slice(1, -1))
+//
+// }
