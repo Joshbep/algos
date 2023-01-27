@@ -42,3 +42,10 @@
 
 //AVERAGE
 //O(n)
+
+//Binary Search
+//Binary search is a much faster form of search
+//Binary search only works on sorted arrays
+
+//DIVIDE AND CONQUER
+//Split in half and if bigger move up
