@@ -93,3 +93,20 @@
 
 //BEST CASE
 //O(1)
+
+//rememebr binary can only be used with sorted arrays
+
+//naive string search
+
+//loop over the longer string
+//loop over the shorter string
+//if the characters don't match, break out of the inner loop
+//if the characters do match keep going
+//if you complete the inner loop and find a match increment the count of matches
+//return the count
+
+function searchNaiveString(long, short) {
+
+}
+
+console.log(searchNaiveString('lorie loled'))
