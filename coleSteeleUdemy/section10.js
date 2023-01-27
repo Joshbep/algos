@@ -20,14 +20,25 @@
 //if it is return index
 //if never found return -1
 
-function linearSearch(arr, num) {
-  for(let i = 0; i < arr.length; i++) {
-    if(arr[i] === num) {
-      return i;
-    }
-  }
-  return -1;
-}
+// function linearSearch(arr, num) {
+//   for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] === num) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
 
 //time BigO O(n)
 //Space BigO O(1)
+
+//Linear Search BIG O
+
+//BEST CASE
+//O(1)
+
+//WORST
+//O(n)
+
+//AVERAGE
+//O(n)
