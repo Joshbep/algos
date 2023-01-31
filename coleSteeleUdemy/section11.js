@@ -35,6 +35,9 @@
   //if it returns a positive number, a should come after b,
   //if it returns 0, a and b are the same as far as the sort is concerned
 
-function numberCompare(num1, num2) {
-  return num1 - num2;
-}
+// function numberCompare(num1, num2) {
+//   return num1 - num2;
+// }
+
+//BUBBLE SORT
+// a sorting algo where the largest values bubble up to the top
