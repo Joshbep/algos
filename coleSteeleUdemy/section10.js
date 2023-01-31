@@ -120,4 +120,4 @@ function searchNaiveString(long, short) {
   return count;
 }
 
-console.log(searchNaiveString('lorie loled'))
+console.log(searchNaiveString('lorie loled', 'e'))
