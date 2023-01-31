@@ -14,4 +14,11 @@
 
 //why do we need to learn this?
 //sorting is an incredibly common task, so it's good to know how it works
-//there are many ways to sort things, and different techniques have their own advantages and disadvanatges
+//there are many ways to sort things, and different techniques have their own advantages and disadvantages
+
+
+//objectives
+//implement bubble sort
+//implement selection sort
+//implement insertion sort
+//understand why it is important to learn these simpler sorting algos
