@@ -22,3 +22,19 @@
 //implement selection sort
 //implement insertion sort
 //understand why it is important to learn these simpler sorting algos
+
+//javascript has a sort method
+//but it doesn't always work like you want it to
+
+//telling javascript how to sort
+//The built in sort method accepts an optional comparator function
+//you can use this comparator function to tell javascript how you want it to sort
+//the comparator looks at paors of elements (a and b),
+//determines their sort order based on the return value
+  //if it returns a negative number, a should come before b
+  //if it returns a positive number, a should come after b,
+  //if it returns 0, a and b are the same as far as the sort is concerned
+
+function numberCompare(num1, num2) {
+  return num1 - num2;
+}
