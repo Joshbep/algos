@@ -7,13 +7,19 @@
 //continue to the next element and if it is in th eincorrect order, iterate through the sorted portion
 //(i.e. the left side) to place the element in the correct place.
 
-function insetionSort(arr) {
+function insertionSort(arr) {
   for(let i = 1; i < arr.length; i++) {
     let currentVal = arr[i];
+    console.log(currentVal);
     for(let j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
-      arr[j + 1] = arr[j]
+      arr[j+1] = arr[j]
     }
-    arr[j + 1] = currentVal
+    arr[j+1] = currentVal
+    console.log(arr)
   }
   return arr;
 }
+console.log(insertionSort([2,1,9,76,4]))
+
+//insertion sort time complexity
+//
