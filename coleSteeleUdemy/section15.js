@@ -23,3 +23,12 @@
 //works by decomposing an array into smaller arrays of 0 or 1 elements, then building up a newly sorted array
 
 //split down to 0 or 1 element and then merge smallest first. Then merge back together again
+
+//merging arrays
+
+// should run in O(n+m) time and O(n+m) space
+//and should not modify the parameters passed to it
+
+//pseudocode
+//create an empty array, take a look at the smallest values in each input array
+//while there are still values we havent looked at
