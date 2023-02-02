@@ -58,3 +58,8 @@ function merge(arr1, arr2) {
 }
 
 console.log(merge([1,10,50], [2,14,99,100]))
+
+//sorting part of merge sort
+//break up the array into halves until you have arrays that are empty or have one element
+//once you have smaller sorted arrays, merge those arrays with other sorted arrays until you are back at the full length of the array
+//once the array has beem ,erged back together, return the merged (and sorted array)
