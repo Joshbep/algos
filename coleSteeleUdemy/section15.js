@@ -75,3 +75,10 @@ function mergeSort(arr) {
 }
 
 console.log(mergeSort([10,24,76,73,72,1,9]))
+
+//big O of merge sort
+
+//time best O(n log n)
+//time average O(n log n)
+////time worst O(n log n)
+////space O(n)
