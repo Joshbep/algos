@@ -32,3 +32,19 @@
 //pseudocode
 //create an empty array, take a look at the smallest values in each input array
 //while there are still values we havent looked at
+
+function merge(arr1, arr2) {
+  let results = [];
+  let i = 0;
+  let j = 0;
+  while(i< arr1.length && j < arr2.length) {
+    if(arr2[j] > arr1[i]){
+      results.push(arr1[i]);
+      i++;
+    }else {
+      results.push(arr2[j]);
+      j++;
+    }
+  }
+  return results;
+}
