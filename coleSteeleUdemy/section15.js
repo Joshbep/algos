@@ -16,3 +16,10 @@
 //theres a trade off between efficiency and simplicity
 //the more efficient algos are much less simple, and generally
 //take longer to understand
+
+//merge sort intro
+// its a combo of two things - merging and sorting!
+//explooits the fact that arrays of 0 or 1 element are alwasy sorted
+//works by decomposing an array into smaller arrays of 0 or 1 elements, then building up a newly sorted array
+
+//split down to 0 or 1 element and then merge smallest first. Then merge back together again
