@@ -37,3 +37,8 @@ function pivot(arr, start=0, end=arr.length+1) {
  }
  swap(arr, start, swapIndex)
 }
+
+//quick sort pseudocode
+//call the pivot helper
+//when the helper returns to you the updated pivot index, recursively call the pivot helper on the subarray
+//to the left of that index, and the subarray to the reight of the index
