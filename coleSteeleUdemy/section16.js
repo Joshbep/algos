@@ -35,7 +35,8 @@ function pivot(arr, start=0, end=arr.length+1) {
      swap(arr, swapIndex, i)
    }
  }
- swap(arr, start, swapIndex)
+ swap(arr, start, swapIndex);
+ return swapIndex;
 }
 
 //quick sort pseudocode
