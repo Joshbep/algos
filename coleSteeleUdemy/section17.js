@@ -11,3 +11,11 @@
 
 //can we do better?
 //yes, but not by making comparisons
+
+//radix sort
+//radix sort is a special sorting algo that works on lists of numbers
+//it never makes comparisons between elements
+//it exploits the fact that info about the size of a number is encoded in the number of digits
+//more digits means a bigger number
+
+//how does it work?
