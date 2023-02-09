@@ -5,3 +5,9 @@
 //why so many?
 //different data structures excel at different things.
 //some are highly specialized, while others (like arrays) are more generally used
+
+//learn singly linked lists
+
+//learn doubly linked lists
+
+//pay attention to the prereqs for each section
