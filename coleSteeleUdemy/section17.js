@@ -64,3 +64,9 @@ function radixSort(nums) {
   }
   return nums
 }
+
+//radix sort big O
+//best - O(nk)
+//Average - O(nk)
+//worst - O(nk)
+//space complexity - O(n + k)
