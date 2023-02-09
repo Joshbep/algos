@@ -70,3 +70,7 @@ let kitty = new Student("kitty", "cat", 1)
 //instance methods
 firstStudent.fullName();
 firstStudent.markLate();
+
+//one gotcha with this.
+
+//inside all of our instance methods and constructor, the keyword `this` refers to the object created from that class(also known as an instance)
