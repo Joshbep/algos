@@ -57,6 +57,9 @@ class SinglyLinkedList{
       current = current.next;
     }
   }
+  pop(val){
+
+  }
 }
 
 // let first = new Node("Hi")
@@ -85,5 +88,13 @@ list.push("hello")
 
 
 //popping
-//removing a node from the end of the linked list
-list.traverse();
+// //removing a node from the end of the linked list
+// list.traverse();
+
+//popping psuedocode
+//if there are no nodes in the list. return undefined
+//loop through the list until you reach the tail
+//set the next property of the 2nd to last node to be null
+// set the tail to be the 2nd to last node
+//decrement the length of the list by 1
+//return the value of the node removed
