@@ -75,3 +75,7 @@ list.push("hello")
 //otherwise set the next property on the tail to be the new node and set the tail property on the list ot be the newly created node
 //increment length by one
 //return linked list
+
+
+//popping
+//removing a node from the end of the linked list
