@@ -50,6 +50,13 @@ class SinglyLinkedList{
     this.length++
     return this;
   }
+  traverse(){
+    let current = this.head;
+    while(current){
+      console.log(current.val)
+      current = current.next;
+    }
+  }
 }
 
 // let first = new Node("Hi")
@@ -79,3 +86,4 @@ list.push("hello")
 
 //popping
 //removing a node from the end of the linked list
+list.traverse();
