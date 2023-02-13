@@ -116,3 +116,10 @@ list.push("hello")
 
 //shifting
 //removing a new node from the begining of the linked list
+
+//shifting pseudocode
+//if there are no nodes return undefined
+//store the current head property in a variable
+//set the head property to be the current head's next property
+//decrement the length by 1
+//return the value of the node removed
