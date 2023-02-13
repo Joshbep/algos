@@ -112,3 +112,7 @@ list.push("hello")
 // set the tail to be the 2nd to last node
 //decrement the length of the list by 1
 //return the value of the node removed
+
+
+//shifting
+//removing a new node from the begining of the linked list
