@@ -158,4 +158,18 @@ list.push("hello")
 //be the current head property on the list
 //set the head property on the list to be that newly created node
 
-//unshift solution
+//unshift solution above in class
+
+//get method
+//retrieving a node by it's position in the linked list!
+
+//get pseudocode
+//this function should accept an index
+
+//if the index is less than zero or greater than or equal
+//to the length of the list, return null
+
+//loop through the list until you reach the index and
+//returnn the node at that specific index
+
+//
