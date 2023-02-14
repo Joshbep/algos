@@ -96,6 +96,16 @@ class SinglyLinkedList{
     this.length++;
     return this;
   }
+  get(idx){
+    if(idx < 0 || idx >= this.length) return null;
+    let counter = 0;
+    let current = this.head;
+    while(counter !== idx) {
+      current = current.next;
+      counter++;
+    }
+    return current;
+  }
 }
 
 // let first = new Node("Hi")
@@ -172,4 +182,4 @@ list.push("hello")
 //loop through the list until you reach the index and
 //returnn the node at that specific index
 
-//
+//get solution above
