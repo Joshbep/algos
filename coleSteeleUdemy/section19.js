@@ -183,3 +183,15 @@ list.push("hello")
 //returnn the node at that specific index
 
 //get solution above
+
+//set method
+//changing the value of a node based on it's position in the linked list
+
+//set pseudocode
+//this function should accept a value and an index
+
+//use your get function to find the specific node
+
+//if the node is not found return false
+
+//if the node is found, set the value of that node to be the value passed to the function and return true
