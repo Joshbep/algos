@@ -292,3 +292,18 @@ list.push("hello")
 
 
 //reverse solution
+
+//big O of singly linked lists
+//insertion - O(1)
+//removal - it deoends... O(1) or O(n)
+//searching - O(N)
+//Access - O(N)
+
+//recap
+//singly linked lists are an excellent alternative to arrays
+//when insertion and deletion at the begninning are freqently required
+
+//arrays contain a built in index wheras linked lists do not
+
+//the idea of a list data structure that consists of nodes is the foundation for other data strcutures
+//like stacks and queues
