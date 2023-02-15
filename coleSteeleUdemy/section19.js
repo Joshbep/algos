@@ -264,3 +264,14 @@ list.push("hello")
 //decrement the length
 
 //remove solution above ^^
+
+//reverse
+//reversing the linked list in place!
+
+//reversing pseudocode
+//swap teh head and tail
+//create a variable called next
+//create a variable called prev
+//created a variable called node and intiialize it to the head property
+//loop through the list
+//set next to be the next property on whatever node is
