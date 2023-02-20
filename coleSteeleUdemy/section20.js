@@ -54,6 +54,9 @@ class DoublyLinkedList {
     this.length++;
     return this;
   }
+  pop() {
+
+  }
 }
 
 
@@ -74,3 +77,23 @@ class DoublyLinkedList {
 //return the doubly linked list
 
 //puhsing solution above ^^^
+
+
+//popping
+//removing a node from the end of the doubly linekd lists
+
+//popping psuedocode
+
+//if there is no head, return undefined
+
+//store the current tail in a variable to return later
+
+//if the length is 1, set the head and tail to be null
+
+//update the tail to be the previous node
+
+//set the newTail's next to null
+
+//decrement the length
+
+//return the value removed
