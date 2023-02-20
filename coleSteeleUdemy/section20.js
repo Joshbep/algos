@@ -16,3 +16,32 @@
 //comparisons with singly linked lists
 //more memory === more flexibility
 //it's almost always a tradeoff
+
+//Node
+//val
+//next
+//prev
+
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.next = null;
+    this.prev = null;
+  }
+}
+
+//DoublyLinkedList
+//head
+//tail
+//length
+
+class DoublyLinkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
+  push() {
+    
+  }
+}
