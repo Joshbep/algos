@@ -55,7 +55,7 @@ class DoublyLinkedList {
     return this;
   }
   pop() {
-    if(!this.head) return undefined
+    if(!this.head) return undefined;
     let poppedNode = this.tail;
     if(this.length === 1) {
       this.head = null;
@@ -69,7 +69,6 @@ class DoublyLinkedList {
     return poppedNode;
   }
 }
-
 
 //pushing psuedocode
 //create a new node witht he value passed to the function
@@ -111,3 +110,25 @@ class DoublyLinkedList {
 
 
 //pop solution above ^^
+
+//shifting
+//removing a node from the begining of the doubly linked list
+
+//shifting pseudocode
+//if length is 0, return undefined
+
+//store current head property in a variable (we'll call it old head)
+
+//if the length is one
+  //set the head to be null
+  //set the tail to be null
+
+//update the head to be next of the old head
+
+//set the head's prev property to null
+
+//set the old head's next to null
+
+//decrement length
+
+//return old head
