@@ -301,3 +301,10 @@ class DoublyLinkedList {
 //Use the get method to retrive the item to be removed.
 
 //set the next and prev to null on the found node
+
+
+//BIG O of doubly linked lists
+//insertion - O(1);
+//removal - O(1);
+//searching - O(n);
+//access - O(n);
