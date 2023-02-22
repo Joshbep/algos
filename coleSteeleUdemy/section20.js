@@ -122,6 +122,20 @@ class DoublyLinkedList {
     }
     return false;
   }
+  insert(index, val){
+    if(index < 0 || index > this.length) return false;
+    if(index === 0) return this.unshift(val);
+    if(index === this.length) return this.push(val);
+    let newNode = new Node(val);
+    let beforeNode = this.get(index -1);
+    let afterNode = beforeNode.next;
+    beforeNode.next = newNode;
+    newNode.prev = beforeNode;
+    newNode.next = afterNode;
+    afterNode.prev = newNode;
+    this.length++;
+    return true
+  }
 }
 
 //pushing psuedocode
@@ -140,7 +154,7 @@ class DoublyLinkedList {
 
 //return the doubly linked list
 
-//puhsing solution above ^^^
+//pushing solution above ^^^
 
 
 //popping
@@ -236,6 +250,8 @@ class DoublyLinkedList {
 
 //return false
 
+//set solution above ^^
+
 //insert method
 //adding a node in a doubly linked list by a certain position
 
@@ -253,3 +269,5 @@ class DoublyLinkedList {
 //increment lenght
 
 //return true
+
+//insert solution above ^^^
