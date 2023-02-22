@@ -124,17 +124,19 @@ class DoublyLinkedList {
   }
   insert(index, val){
     if(index < 0 || index > this.length) return false;
-    if(index === 0) return this.unshift(val);
-    if(index === this.length) return this.push(val);
+    if(index === 0) return !!this.unshift(val);
+    if(index === this.length) return !!this.push(val);
+
     let newNode = new Node(val);
     let beforeNode = this.get(index -1);
     let afterNode = beforeNode.next;
+
     beforeNode.next = newNode;
     newNode.prev = beforeNode;
     newNode.next = afterNode;
     afterNode.prev = newNode;
     this.length++;
-    return true
+    return true;
   }
 }
 
@@ -271,3 +273,11 @@ class DoublyLinkedList {
 //return true
 
 //insert solution above ^^^
+
+
+//remove
+//removing a node in a doubly linked list by a certain position
+
+//remove pseudocode
+//if th eindex is less than zero or greater than or equal to the
+//length return undefined
