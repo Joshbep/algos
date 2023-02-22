@@ -114,6 +114,9 @@ class DoublyLinkedList {
       return current;
     }
   }
+  set(){
+
+  }
 }
 
 //pushing psuedocode
@@ -213,3 +216,17 @@ class DoublyLinkedList {
 //if the index is greater than half the length of th elist
   //loop through the list starting from the tail and loop towards the middle
   //return the node once it is found
+
+
+//get solution above ^^
+
+//set
+//replacing the value of a node to the in a doubly linked list
+
+//create a variable which is the result of the get method at the index
+//passed to the function
+    //if the get method returns a valid node, set the value of that node to be the value
+    //passed to the function
+    //return true
+
+//return false
