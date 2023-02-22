@@ -138,6 +138,18 @@ class DoublyLinkedList {
     this.length++;
     return true;
   }
+  remove(index){
+    if(index < 0 || index >= this.length) return undefined;
+    if(index === 0) return this.shift();
+    if(index === this.length - 1) return this.pop();
+    let removeNode = this.get(index);
+    removeNode.prev.next = removeNode.next;
+    removeNode.next.prev = removeNode.prev;
+    removeNode.next = null;
+    removeNode.prev = null;
+    this.length--;
+    return removeNode;
+  }
 }
 
 //pushing psuedocode
@@ -279,5 +291,13 @@ class DoublyLinkedList {
 //removing a node in a doubly linked list by a certain position
 
 //remove pseudocode
-//if th eindex is less than zero or greater than or equal to the
+//if the index is less than zero or greater than or equal to the
 //length return undefined
+
+//if the index is 0, shift
+
+//if the index is the same as the length-1, pop
+
+//Use the get method to retrive the item to be removed.
+
+//set the next and prev to null on the found node
