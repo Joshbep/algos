@@ -118,9 +118,9 @@ class DoublyLinkedList {
     let foundNode = this.get(index);
     if(foundNode !== null){
       foundNode.val = val;
-      return true
+      return true;
     }
-    return false
+    return false;
   }
 }
 
@@ -235,3 +235,21 @@ class DoublyLinkedList {
     //return true
 
 //return false
+
+//insert method
+//adding a node in a doubly linked list by a certain position
+
+//inserting psuedocode
+//if the index is less than zero or greater than or equal to the length return false
+
+//if th eindex is 0, unshift;
+//if th eindex is the same as the length, push
+
+//use the get method to access th eindex -1
+
+//set the next and prev properties on the correct nodes to link
+//everything together
+
+//increment lenght
+
+//return true
