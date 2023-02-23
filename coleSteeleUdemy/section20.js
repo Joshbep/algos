@@ -308,3 +308,52 @@ class DoublyLinkedList {
 //removal - O(1);
 //searching - O(n);
 //access - O(n);
+
+
+//DLL push - exercise
+
+//pushing psuedocode
+//create a new node witht he value passed to the function
+
+//if the head property is null set the head and tail
+//to be the newly created node
+
+//if not, set the next property on the tail to be that node
+
+//set the previous property on the newly created node to be the tail
+
+//set the tail to be the newly created node
+
+//increment the length
+
+//return the doubly linked list
+
+//pushing solution above ^^^
+
+class Node{
+    constructor(val){
+        this.val = val
+        this.next = null;
+        this.prev = null;
+    }
+}
+
+class DoublyLinkedList{
+    constructor(val){
+        this.val = val
+        this.next = null;
+    }
+    push(val){
+      let newNode = new Node(val);
+      if(this.length === 0) {
+        this.head = newNode;
+        this.tail = newNode;
+      } else {
+        this.tail.next = newNode;
+        newNode.prev = this.tail;
+        this.tail = newNode;
+      }
+      this.length++;
+      return this;
+    }
+}
