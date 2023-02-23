@@ -359,4 +359,80 @@ class DoublyLinkedList{
       this.length++;
       return this;
     }
+    unshift() {
+      let newNode = new Node(val);
+      if(this.length === 0){
+        this.head = newNode;
+        this.tail = newNode;
+      } else {
+        this.head.prev = newNode;
+        newNode.next = this.head;
+        this.head = newNode;
+      }
+      this.length++;
+      return this;
+    }
+    shift() {
+      if(this.length === 0) return undefined;
+      let oldHead = this.head;
+      if(this.length === 1) {
+        this.head = null;
+        this.tail = null;
+      } else {
+        oldHead.next = this.head;
+        this.head.prev = null;
+        oldHead.next = null;
+      }
+      this.length--;
+      return oldHead
+    }
+    shift() {
+      if(this.length === 0) return undefined;
+      let oldHead = this.head;
+      if(this.length === 1) {
+        this.head = null;
+        this.tail = null;
+      } else {
+        this.head = oldHead.next;
+        this.head.prev = null;
+        oldHead.next = null;
+      }
+      this.length--;
+      return oldHead;
+    }
 }
+
+//DLL unshift - exercise
+
+//unshift pseudocode
+
+//create a new node with the value passed to the function
+
+//if the length is 0
+  //set the head to be th enew node
+  //set the tail to be the new node
+//otherwise
+  //set the prev property on the head of the list to be the new node
+  //set the next property on the new node to be the head property
+  //update the head to be the new node
+
+//DLL shift - exercise
+
+//shifting pseudocode
+//if length is 0, return undefined
+
+//store current head property in a variable (we'll call it old head)
+
+//if the length is one
+  //set the head to be null
+  //set the tail to be null
+
+//update the head to be next of the old head
+
+//set the head's prev property to null
+
+//set the old head's next to null
+
+//decrement length
+
+//return old head
