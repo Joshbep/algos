@@ -342,6 +342,9 @@ class DoublyLinkedList{
     constructor(val){
         this.val = val
         this.next = null;
+        this.head = null;
+        this.tail = null;
+        this.length = 0;
     }
     push(val){
       let newNode = new Node(val);
