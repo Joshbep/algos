@@ -379,20 +379,6 @@ class DoublyLinkedList{
         this.head = null;
         this.tail = null;
       } else {
-        oldHead.next = this.head;
-        this.head.prev = null;
-        oldHead.next = null;
-      }
-      this.length--;
-      return oldHead
-    }
-    shift() {
-      if(this.length === 0) return undefined;
-      let oldHead = this.head;
-      if(this.length === 1) {
-        this.head = null;
-        this.tail = null;
-      } else {
         this.head = oldHead.next;
         this.head.prev = null;
         oldHead.next = null;
@@ -400,7 +386,23 @@ class DoublyLinkedList{
       this.length--;
       return oldHead;
     }
+    set(index, val){
+      let foundNode = this.get(index)
+    }
 }
+
+//set
+//replacing the value of a node to the in a doubly linked list
+
+//create a variable which is the result of the get method at the index
+//passed to the function
+    //if the get method returns a valid node, set the value of that node to be the value
+    //passed to the function
+    //return true
+
+//return false
+
+//set solution above ^^
 
 //DLL unshift - exercise
 
@@ -436,3 +438,6 @@ class DoublyLinkedList{
 //decrement length
 
 //return old head
+
+
+//DLL set Exercise
