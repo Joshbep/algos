@@ -388,6 +388,11 @@ class DoublyLinkedList{
     }
     set(index, val){
       let foundNode = this.get(index)
+      if(foundNode !== null) {
+        foundNode.val = val
+        rturn true
+      }
+      return false
     }
 }
 
