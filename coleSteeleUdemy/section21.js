@@ -110,3 +110,24 @@
 //Stacks are used to ahndle function invocations for operations like undo/redo
 //and for routing and much more
 ///they are not a built in data strucure in javascript, but htey are relativel simple to implement
+
+
+//QUEUES
+//objectives
+//define queue
+//understand use cases for a queue
+//implement operations ona  QUEUE data strcuture
+
+//what is a QUEUE
+//FIFO data structure
+//First in first out
+//weve seen this before
+//QUEUES exist everhwere! think about th elast time yoi waited in line...
+
+//How do we use them in programming?
+//background tasks
+//uploading resources
+//printing/task processing
+
+
+//BUILDING A QUEUE WITH AN ARRAY
