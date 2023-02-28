@@ -131,3 +131,20 @@
 
 
 //BUILDING A QUEUE WITH AN ARRAY
+
+let q = [];
+
+// q.push("first")
+// q.push("second")
+// q.push("third")
+// console.log(q)
+// q.shift()
+// //removing from beginging makes this a queue
+// console.log(q)
+
+q.unshift("first")
+q.unshift("second")
+q.unshift("third")
+console.log(q)
+q.pop()
+console.log(q)
