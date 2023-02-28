@@ -49,51 +49,64 @@
 
 //writing our own stack from scratch
 //linked list implementation
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
+// class Node {
+//   constructor(value) {
+//     this.value = value;
+//     this.next = null;
+//   }
+// }
+//
+// class Stack {
+//   constructor(){
+//     this.first = null;
+//     this.last = null;
+//     this.size = 0;
+//   }
+//   push(val){
+//     let newNode = new Node(val);
+//     if(!this.first){
+//       this.first = newNode;
+//       this.last = newNode;
+//     } else {
+//       //prev first set to temp
+//       let temp = this.first;
+//       // new first = newNode
+//       this.first = newNode;
+//       //newfirst.next = temp which is old first
+//       this.first.next = temp
+//     }
+//     return ++this.size;
+//   }
+//   pop(){
+//     if(this.size === 0) return null;
+//     let temp = this.first;
+//     if(this.first === this.last){
+//       this.last = null;
+//     }
+//     this.first = this.first.next;
+//     this.size--;
+//     return temp.val;
+//   }
+// }
 
-class Stack {
-  constructor(){
-    this.first = null;
-    this.last = null;
-    this.size = 0;
-  }
-  push(val){
-    let newNode = new Node(val);
-    if(!this.first){
-      this.first = newNode;
-      this.last = newNode;
-    } else {
-      //prev first set to temp
-      let temp = this.first;
-      // new first = newNode
-      this.first = newNode;
-      //newfirst.next = temp which is old first
-      this.first.next = temp
-    }
-    return ++this.size;
-  }
-  pop(){
-    if(this.size === 0) return null;
-    let temp = this.first;
-    if(this.first === this.last){
-      this.last = null;
-    }
-    this.first = this.first.next;
-    this.size--;
-    return temp.val;
-  }
-}
+// let stack = new Stack();
+// stack.push("FIRST")
+// stack.push("SECOND")
+// stack.push("THIRD")
+// stack.push("FOURTH")
+// console.log(stack)
+// stack.pop()
+// console.log(stack)
 
-let stack = new Stack();
-stack.push("FIRST")
-stack.push("SECOND")
-stack.push("THIRD")
-stack.push("FOURTH")
-console.log(stack)
-stack.pop()
-console.log(stack)
+//BIG O OF STACKS
+
+//insertion - O(1)
+//Removal - O(1)
+//Searching O(N)
+//Access - O(N)
+
+//RECAP
+//stacks are a LIFO last in first out
+//Stacks are used to ahndle function invocations for operations like undo/redo
+//and for routing and much more
+///they are not a built in data strucure in javascript, but htey are relativel simple to implement
