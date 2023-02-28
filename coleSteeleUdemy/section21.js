@@ -193,3 +193,7 @@ class Queue {
 //removal - O(1)
 //searching O(N)
 //Access - O(N)
+
+//RECAP
+//QUEUES are a FIFO data structure, all elements are first in first out
+//queues are useful for processing tasks and are foundational for more complex data strcutures
