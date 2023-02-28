@@ -24,4 +24,24 @@
 //Undo/Redo
 //routing (the history object) is treated like a stack!
 
+//lesson 2
 //there is more than one way of implementing a stack
+//javascript does not come with a pre built stack implementation
+
+// let stack = [];
+// stack.push("google")
+// stack.push("instagram")
+// stack.push("youtube")
+// console.log(stack)
+// stack.pop();
+// console.log(stack)
+
+// stack.unshift("create file");
+// stack.unshift("resized file");
+// stack.unshift("cloned out wrinkle");
+// console.log(stack)
+// stack.shift();
+// console.log(stack)
+
+//in an array adding to begining is not best
+//big O there would be 0(n)
