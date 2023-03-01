@@ -49,4 +49,26 @@
 //KINDS OF TREES
 //trees
 //binary trees
+
+//each node can have at most 2 children
+//bi = 2
+
 //binary search trees
+//each node can have at most 2 children
+//bi = 2
+//left is always smaller than parent
+//right is always larger than parent
+
+
+//pop quiz
+//no
+//6 is smaller on right of 8
+
+//no 3 children on root
+
+//no
+//4 is bigger on left of 3
+
+
+//
+//
