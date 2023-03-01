@@ -130,7 +130,7 @@ class BinarySearchTree {
       }
     }
     if(!found) return false;
-      return current;
+    return current;
   }
 }
 
@@ -144,3 +144,8 @@ let tree = new BinarySearchTree();
 
 //finding a node in a BST
 //FIND solution above ^^^
+
+
+//BIG O
+//insertion - O(log n)
+//Searching - O(log n)
