@@ -43,3 +43,10 @@
 //abstract syntax trees
 // AI
 //Folders in operating systems
+//JSON
+
+
+//KINDS OF TREES
+//trees
+//binary trees
+//binary search trees
