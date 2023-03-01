@@ -33,3 +33,13 @@
 // SINLINGS - a group of nodes with the same parent
 //LEAF - a node with no children
 //EDGE - the connection between one node and another
+
+
+//TREES
+
+//lots of different applications
+//HTML DOM
+//network routing
+//abstract syntax trees
+// AI
+//Folders in operating systems
