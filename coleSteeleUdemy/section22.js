@@ -70,5 +70,29 @@
 //4 is bigger on left of 3
 
 
-//
-//
+//HOW BSTS work
+//parent has 2 children
+//child left has to be smaller
+//child right has to be greater
+
+//OUR TREE CLASS
+
+class Node {
+  constructor(value){
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+class BinarySearchTree {
+  constructor(){
+    this.root = null;
+  }
+}
+
+let tree = new BinarySearchTree();
+tree.root = new Node(10);
+tree.root.right = new Node(15);
+tree.root.left = new Node(7);
+tree.root.left.right =  new Node(9);
