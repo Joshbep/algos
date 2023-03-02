@@ -91,8 +91,16 @@ class BinarySearchTree {
     }
     return data;
   }
-  DFS(){
-
+  DFSPreOrder(){
+    let data = [];
+    let current = this.root;
+    function traverse(node){
+      data.push(node.value);
+      if(node.left) traverse(node.left);
+      if(node.right) traverse(node.right);
+    }
+    traverse(current);
+    return data;
   }
 }
 
