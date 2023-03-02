@@ -149,3 +149,5 @@ let tree = new BinarySearchTree();
 //BIG O
 //insertion - O(log n)
 //Searching - O(log n)
+
+//worst case
