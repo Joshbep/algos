@@ -112,6 +112,16 @@ class BinarySearchTree {
     traverse(this.root);
     return data;
   }
+  DFSInOrder(){
+    let data = [];
+    function traverse(node){
+      if(node.left) traverse node.left;
+      if(node.right) traverse node.right;
+      data.push(node.value)
+    }
+    traverse(this.root);
+    return data;
+  }
 }
 
 let tree = new BinarySearchTree();
@@ -126,6 +136,9 @@ let tree = new BinarySearchTree();
 //invoke helper function
 //return the array of values
 
-//DFS preorder solution above!
+//DFS - preorder solution above!
 
-//DFS postorder
+//DFS - postorder solution above
+
+
+//DFS - Inorder solution above
