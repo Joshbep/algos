@@ -142,3 +142,21 @@ let tree = new BinarySearchTree();
 
 
 //DFS - Inorder solution above
+
+//BFS?
+//DFS?
+//Which is better?
+
+//DFS in order
+//used commonly with BST's
+// notice we get all nodes in the tre in their underlying order
+
+//DFS pre order
+//cab ne used to export a tree strcuture so that it is easily reconstructred or copied
+
+//recap
+//trees are non linear data structures that contain a root and child nodes
+//binary trees can have values of any type, but at most two children for each parent
+//bonary search trees are more specific version of binary trees where
+//every node to the left of a parent is less and right is more.
+//we can search through trees using BFS and DFS
