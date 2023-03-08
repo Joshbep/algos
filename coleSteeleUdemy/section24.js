@@ -29,7 +29,28 @@
 
 //max binary
 //left and right children will be smaller
+//no relationship between siblings
 
 //min binary
 //left and right are lager than parent
 //no relationship between siblings
+
+//why should we care?
+//binary heaps are used to implement priorty queues
+//which are very commonly used data structures
+//they are also used quite a bit, with graph traversal algos
+
+//representing heaps
+//theres an easy way pf storing a binary heap
+//A LIST/ARRAY
+
+//representing a heap
+
+//for any index of an array n...
+//the left child is tored at 2n + 1
+//the right child is at 2n + 2
+
+//what if we have a child node and want to find it's parent
+//for any child at index n...
+//it's parent is at index (n-1)/2
+//or (n-2)/2
