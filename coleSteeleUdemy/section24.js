@@ -54,3 +54,16 @@
 //for any child at index n...
 //it's parent is at index (n-1)/2
 //or (n-2)/2
+
+//defining our class
+ class MaxBinaryHeap {
+   constructor {
+
+   }
+   let values = []
+ }
+
+ //adding to a MaxBinaryHeap
+ //add to the end
+ //bubble up
+ 
