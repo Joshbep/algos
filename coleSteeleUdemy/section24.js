@@ -60,10 +60,15 @@
    constructor {
 
    }
-   let values = []
+   insert(){
+     let values = []
+   }
  }
 
  //adding to a MaxBinaryHeap
  //add to the end
  //bubble up
- 
+
+ //insert psuedocode
+ //push the value into the values property on the heap
+ //bubble the value up to its correct spot!
