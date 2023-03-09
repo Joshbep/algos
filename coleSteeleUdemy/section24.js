@@ -143,3 +143,9 @@
 //what is a priorty queue
 //a data structure whee each emelent has a priorty emelements with
 //higher priorties are served before elements with lower priorties
+
+//these are seperate from heaps
+
+//a naive version
+//use a list to store all elements
+//iterate over the entire thing to find the highest priorty element
