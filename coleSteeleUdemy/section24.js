@@ -53,15 +53,27 @@
 //what if we have a child node and want to find it's parent
 //for any child at index n...
 //it's parent is at index (n-1)/2
-//or (n-2)/2
 
 //defining our class
  class MaxBinaryHeap {
    constructor {
-
+     this.values = [];
    }
-   insert(){
-     let values = []
+   insert(element){
+    this.values.push(element)
+    this.bubbleUp();
+   }
+   bubbleUp(){
+     let idx = this.value.length - 1;
+     const element = this.values[idx]
+     while(idx > 0){
+       let parentIdx = Math.floor((idx - 1)/2);
+       let parent = this.values[parentIdx];
+       if(element <= parent) break;
+       this.values[parentIdx] = element
+       this.values[idx] = parent;
+       idx = parentIdx
+     }
    }
  }
 
