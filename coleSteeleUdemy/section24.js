@@ -78,8 +78,10 @@
    extractMax(){
      const max = this.values[0];
      const end = this.values.pop()
-     this.values[0] = end;
-     this.sinkDown();
+     if(this.values.length > 0){
+      this.values[0] = end;
+      this.sinkDown();
+     }
      return max;
    }
    sinkDown(){
@@ -109,6 +111,9 @@
        }
 
        if(swap === null) break;
+       this.values[idx] = this.values[swap];
+       this.values[swap] = element;
+       idx = swap;
      }
    }
  }
@@ -133,3 +138,8 @@
 //swap first value in the values property with the last one
 //pop from the values property, so you can return the value at the end
 //have the new root sink down tot he correct spot
+
+//building a priorty queue
+//what is a priorty queue
+//a data structure whee each emelent has a priorty emelements with
+//higher priorties are served before elements with lower priorties
