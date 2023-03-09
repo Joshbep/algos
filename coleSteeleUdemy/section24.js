@@ -75,6 +75,9 @@
        idx = parentIdx
      }
    }
+   remove(element){
+
+   }
  }
 
  //adding to a MaxBinaryHeap
@@ -84,3 +87,16 @@
  //insert psuedocode
  //push the value into the values property on the heap
  //bubble the value up to its correct spot!
+
+ //removing from a  heap
+
+ //remove the root
+ //replace with the most recently added
+ //adjust (sink down)
+
+
+//REMOVING
+//(also called extractMax)
+//swap first value in the values property with the last one
+//pop from the values property, so you can return the value at the end
+//have the new root sink down tot he correct spot
