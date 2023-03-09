@@ -230,3 +230,18 @@ Er.enqueue("high fever", 4)
 Er.enqueue("highest fever", 3)
 Er.enqueue("broken arm", 2)
 console.log(Er)
+
+//BIG O of Binary Heaps
+//Insertion - O(log N)
+//Removal - O(log N)
+//Search - O(N)
+
+//what about worst case?
+
+
+//RECAP
+//binary heaps are very useful data strcutures for sorting, and implementing
+//other data strcutures like priorty queues
+//binary heaps are either MaxBinaryHeaps or MinBinaryHeaps with parents
+//either being smaller or larger than their children
+//with just a little bit of math, we can represent heaps using arrays!
