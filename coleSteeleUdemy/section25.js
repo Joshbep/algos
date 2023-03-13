@@ -36,3 +36,10 @@
 //not super readable! what do these colors correspond to?
 
 //it would be nice if instead of using indices to access the colors, we could use more human readable keys
+
+//colors["cyan"]
+//IS WAY BETTER THAN
+//colors[2]
+
+//the hash part
+//to implement a hash table, we'll be using an array
