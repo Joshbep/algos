@@ -43,3 +43,8 @@
 
 //the hash part
 //to implement a hash table, we'll be using an array
+
+//what makes a good hash?
+//1.FAST(constant time)
+//2.Doesn't cluster outputs as specific indices, but distributes uniformly
+//3.deterministic(same input yields same output)
