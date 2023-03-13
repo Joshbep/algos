@@ -60,16 +60,16 @@
 
 //refining our hash
 
-function hash(key, arrayLen) {
-  let total = 0;
-  let WEIRD_PRIME = 31;
-  for(let i = 0; i < Math.min(key.length, 100); i++) {
-    let char = key[i]
-    let value = char.charCodeAt(0) - 96
-    total = (total + WEIRD_PRIME + value) % arrayLen;
-  }
-  return total;
-}
+// function hash(key, arrayLen) {
+//   let total = 0;
+//   let WEIRD_PRIME = 31;
+//   for(let i = 0; i < Math.min(key.length, 100); i++) {
+//     let char = key[i]
+//     let value = char.charCodeAt(0) - 96
+//     total = (total + WEIRD_PRIME + value) % arrayLen;
+//   }
+//   return total;
+// }
 
 //dealing with collisions
 //even with a large array and a great hash function, collission are inevitable
@@ -85,3 +85,31 @@ function hash(key, arrayLen) {
 //linear probing
 //with linear probing, when we find a collission, we search through the array to find the next empty slot
 //unlike with a seperate chaining, this allows us to store a single key-value at each index
+
+//set/get
+//SET
+//1. accepts a key and a value
+//2. hashes the key
+//stores the key-value pair in the hash table array via seperate chaining
+
+//GET
+//1.accepts a key
+//2.hashes the key
+//3.retrives the key-value pair in the hash table
+//4.if the key isn't found, returns undefined
+
+class HashTable {
+  constructor(size=53) {
+    this.keyMap = new Array(size);
+  }
+  _hash(key) {
+    let total = 0;
+    let WEIRD_PRIME = 31;
+    for(let i = 0; i < Math.min(key.length, 100); i++) {
+      let char = key[i]
+      let value = char.charCodeAt(0) - 96
+      total = (total * WEIRD_PRIME + value) % this.keyMap.length;
+    }
+    return total;
+  }
+}
