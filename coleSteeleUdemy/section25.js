@@ -70,3 +70,18 @@ function hash(key, arrayLen) {
   }
   return total;
 }
+
+//dealing with collisions
+//even with a large array and a great hash function, collission are inevitable
+
+//there are manyb strategies for dealing with collisions, but we'll focus on two:
+//1. seperate chaining
+//2. Linear probing
+
+//seperate chaining
+//with seperate chaining, at each index in our array we store values using a more sophisticated data structure (an array or a linked list).
+//this allows to store multiple key value pairs at the same index
+
+//linear probing
+//with linear probing, when we find a collission, we search through the array to find the next empty slot
+//unlike with a seperate chaining, this allows us to store a single key-value at each index
