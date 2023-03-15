@@ -24,3 +24,23 @@
 //base definition
 
 //it is a bunch of nodes iwht connections inbetween them
+
+//TYPES OF GRAPHS
+//essential graph terms
+//vertex - a node
+//edge - connection between nodes
+//weighted/unweighted - values assigned to distances between vertices
+//directed/undirected - directions assigned to distanced between vertices
+
+//undirected graph
+//no direction
+
+//directed graph
+//often represented with arrows
+//has direction
+
+//weighted graph
+//each edge has value
+
+//unweighted
+//each edge has no value
