@@ -84,6 +84,13 @@ class Graph {
       v => v !== v1
     );
   }
+  removeVertex(vertex){
+    while(this.adjacenctList[vertex].length){
+      coonst adjacentVertex = this.adjacentList[vertex].pop();
+      this.removeEdge(vertex, adjacentVertex);
+    }
+    delete this.adjacentList[vertex]
+  }
 }
 
 //adding a vertex
@@ -103,3 +110,10 @@ class Graph {
 //removing an edge
 //this function should accept two vertices, we'll call them v1 and v2
 //the function should reassign the key of vertex1 to be an array that does not contain vertex2
+
+
+//REMOVING A VERTEX
+//this funvtion should accept a vertex to remove
+//this function should loop as long as there are any other vertices in the adjacency list for that vertex
+//inside of the loop, call removeedge function
+//delete key
