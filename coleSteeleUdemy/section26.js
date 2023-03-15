@@ -51,3 +51,10 @@
 
 //a matrix is a 2 dimensional structure typically implemented with nested arrays
 //we store info in rows and columns
+
+//ADJACENCY LIST
+
+//WE WILL USE AN ADJACENCY LIST
+//WHY?
+//mainly the space it takes up
+//most data in the real worl tends to lend itself to sparser and or larger graphs
