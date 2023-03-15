@@ -12,3 +12,15 @@
 //with a set of unorded pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph
 
 //USES FOR GRAPHS
+//social networks
+//location / mapping
+//routing algos
+//visual hierarchy
+//file system optimizations
+//everywhere
+
+//recommendations
+
+//base definition
+
+//it is a bunch of nodes iwht connections inbetween them
