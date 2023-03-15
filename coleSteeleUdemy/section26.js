@@ -72,8 +72,34 @@ class Graph {
   addVertex(vertex){
     if(!this.adjacentList[vertex]) this.adjacentList[vertex] = [];
   }
+  addEdge(v1, v2){
+    this.adjacentList[v1].push(v2)
+    this.adjacentList[v2].push(v1)
+  }
+  removeEdge(v1, v2){
+    this.adjacentList[v1] = this.adjacentList[v1].filter(
+      v => v !== v2
+    );
+    his.adjacentList[v2] = this.adjacentList[v2].filter(
+      v => v !== v1
+    );
+  }
 }
 
 //adding a vertex
 //write a method called addvertex
 //it should add a key to the adjacent list witht he name of the vertex and set its calue to be an empty array
+
+
+//ADDING AN EDGE
+//this function should accepts two arguments
+//function should find in the adjacency list the key of vertex1 and push vertex2 tot he array
+//the function should find in the adjacency list the key of vertex2 and push vertex1 tot he array
+//don't worry about handling errors/invalid vertices
+
+//add edge solution above
+
+
+//removing an edge
+//this function should accept two vertices, we'll call them v1 and v2
+//the function should reassign the key of vertex1 to be an array that does not contain vertex2
