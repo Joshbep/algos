@@ -6,3 +6,9 @@
 //implement a grpah using an adjacency list
 //traverse through a graph using BFS and DFS
 //compare and contrast grph traversal algos
+
+//WHAT ARE GRAPHS
+//a graph structure consists of a finite (and possible mutable) set of vehicles or nodes or points, together
+//with a set of unorded pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph
+
+//USES FOR GRAPHS
