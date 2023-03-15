@@ -69,4 +69,11 @@ class Graph {
   constructor(){
     this.adjacentList = {}
   }
+  addVertex(vertex){
+    if(!this.adjacentList[vertex]) this.adjacentList[vertex] = [];
+  }
 }
+
+//adding a vertex
+//write a method called addvertex
+//it should add a key to the adjacent list witht he name of the vertex and set its calue to be an empty array
