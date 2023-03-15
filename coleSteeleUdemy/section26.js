@@ -44,3 +44,10 @@
 
 //unweighted
 //each edge has no value
+
+//REPRESENTING A GRAPH
+
+//adjacency matrix
+
+//a matrix is a 2 dimensional structure typically implemented with nested arrays
+//we store info in rows and columns
