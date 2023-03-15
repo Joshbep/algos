@@ -160,3 +160,10 @@ class HashTable {
 
 let ht = new HashTable();
 ht.set("hello world", "goodbye!!")
+
+
+//BIG O of HASH TABLES
+
+//INSERT: O(1)
+//DELETION: O(1)
+//ACCESS: O(1)
