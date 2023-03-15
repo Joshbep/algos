@@ -99,7 +99,7 @@
 //4.if the key isn't found, returns undefined
 
 class HashTable {
-  constructor(size=4) {
+  constructor(size=17) {
     this.keyMap = new Array(size);
   }
   _hash(key) {
@@ -120,7 +120,15 @@ class HashTable {
     this.keyMap[index].push([key, value])
   }
   get(key) {
-
+    let index = this._hash(key)
+    if(this.keyMap[index]){
+      for(let i = 0; i < this.keyMap[index].length; i++){
+        if(thi.skeyMap[index][i][0] === key) {
+          return this.keyMap[index][i][1];
+        }
+      }
+    }
+    return undefined;
   }
 }
 
