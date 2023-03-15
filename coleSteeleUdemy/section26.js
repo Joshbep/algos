@@ -58,3 +58,15 @@
 //WHY?
 //mainly the space it takes up
 //most data in the real worl tends to lend itself to sparser and or larger graphs
+
+//add vertex intro
+
+//OUR GRAPH CLASS
+
+//we are building an undirected graph
+
+class Graph {
+  constructor(){
+    this.adjacentList = {}
+  }
+}
