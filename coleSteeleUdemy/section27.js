@@ -46,4 +46,26 @@ class Graph {
     }
     delete this.adjacentList[vertex]
   }
+  DFSR(start){
+    const result = [];
+    const visited = {};
+    const adjacencyList = this.adjacencyList
+
+      (function dfs(vertex){
+        if(!vertex) return null;
+        visited[vertex] = true;
+        result.push(vertex);
+        adjacentList[vertex].forEach(neighbor => {
+          if(!visited[neighbor]){
+            return dfs(neighbor)
+          }
+        });
+
+      })(start)
+
+      return result;
+    }
+  }
 }
+
+//Depth first traversel recursively
