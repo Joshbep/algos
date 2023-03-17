@@ -85,6 +85,25 @@ class Graph {
     }
     return result;
   }
+  BFS(start){
+    const queue = [start];
+    const result = [];
+    const visited = {};
+    let currentVertex
+    visited[start] = true;
+
+    while(queue.length){
+      currentVertex = queue.shift();
+      result.push(currentVertex)
+
+      this.adjacencyList[currentVertex].forEach(neighbor => {
+        if(!visited[neighbor]){
+          visited[neighbor] = true;
+          queue.push(neighbor)
+        }
+      })
+    }
+  }
 }
 
 //Depth first traversel recursively
@@ -100,3 +119,19 @@ class Graph {
     //visit vertex (add to result list)
     //label vertex as discovered
     //for each of vertex's neighbors, N do S.push(N)
+
+//BREADTH FIRST
+//VISIT NEIGHBORS AT CURRENT DEPTH FIRST
+//then move on
+
+//BREADTH FIRST
+//this function should accept a starting vertex
+//create a queue (you can use an array) and place the starting vertex in it
+// create an array to store nodes visited
+// crate an object to store nodes visited
+//mark the starting vertex as visited
+//loop as long as there is anything in the queue
+//remove the first vertex from the queue and push it into the array that sores nodes visited
+//loop over each vertex in the adjacency list for the vertex you are visiting
+//if it is not inside the object that stores nodes visited, mark it as visited and enqueue that vertex
+//once done looping, return the array of visited nodes
