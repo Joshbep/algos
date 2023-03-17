@@ -63,8 +63,27 @@ class Graph {
 
       })(start)
 
-      return result;
+    return result;
+  }
+  DFSI(start){
+    const stack = [start];
+    const result = [];
+    const visited = {};
+    let currentVertex;
+
+    visited[start] = true;
+    while(stack.length){
+      currentVertex = stack.pop();
+      result.push(currentVertex);
+
+      this.adjacencyList[currentVertex].forEach(neighbor => {
+        if(!visited[neighbor]){
+          visited[neighbor] = true;
+          stack.push(neighbor)
+        }
+      })
     }
+    return result;
   }
 }
 
@@ -80,4 +99,4 @@ class Graph {
     //if vertex is not labeled as discovered:
     //visit vertex (add to result list)
     //label vertex as discovered
-    //fir each of vertex's neighbors, N do S.push(N)
+    //for each of vertex's neighbors, N do S.push(N)
