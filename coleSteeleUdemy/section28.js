@@ -57,7 +57,7 @@
 //   };
 // }
 
-//implementing Dijkstra's pseudocode
+//implementing Dijkstra's algo
 class PriorityQueue {
   constructor(){
     this.values = [];
