@@ -24,13 +24,27 @@
 //- fib(2) is 1
 //- fib(1) is 1
 
-function fib(n) {
-  if(n <= 2) return 1;
-  return fib(n-1) + fib(n-2);
-}
+// function fib(n) {
+//   if(n <= 2) return 1;
+//   return fib(n-1) + fib(n-2);
+// }
 
 //let's chat about Big O
 //How bad?
 //O(2^n)
 
 // what if we could remember old values?
+
+//memoization
+//storing the results of expensive function calls and returning the cached result when the same inputs occur again
+
+
+function fib(n, memo=[undefined, 1, 1]) {
+  if(memo[n] !== undefined) return memo[n]
+  if(n <= 2) return 1;
+  let res = fib(n-1, memo) + fib(n-2, memo);
+  memo[n] = res;
+  return res;
+}
+
+//Recursion + Memoization
