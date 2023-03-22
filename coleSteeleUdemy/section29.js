@@ -21,8 +21,8 @@
 
 //let's write it!
 //- fib(n) = fib(n-1) + fib(n-2)
-//-fib(2) is 1
-//-fib(1) is 1
+//- fib(2) is 1
+//- fib(1) is 1
 
 function fib(n) {
   if(n <= 2) return 1;
@@ -32,3 +32,5 @@ function fib(n) {
 //let's chat about Big O
 //How bad?
 //O(2^n)
+
+// what if we could remember old values?
