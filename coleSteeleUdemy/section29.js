@@ -28,3 +28,7 @@ function fib(n) {
   if(n <= 2) return 1;
   return fib(n-1) + fib(n-2);
 }
+
+//let's chat about Big O
+//How bad?
+//O(2^n)
