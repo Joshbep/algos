@@ -15,3 +15,16 @@
 //optimal substructure
 //a problem is said to have optimal substructure if an optimal solution can be constructured
 //from optimal solutions of its subproblems
+
+//lets return our pal...
+//the Fibonacci sequence
+
+//let's write it!
+//- fib(n) = fib(n-1) + fib(n-2)
+//-fib(2) is 1
+//-fib(1) is 1
+
+function fib(n) {
+  if(n <= 2) return 1;
+  return fib(n-1) + fib(n-2);
+}
