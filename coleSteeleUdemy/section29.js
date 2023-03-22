@@ -40,7 +40,7 @@
 
 
 function fib(n, memo=[undefined, 1, 1]) {
-  if(memo[n] !== undefined) return memo[n]
+  if(memo[n] !== undefined) return memo[n];
   if(n <= 2) return 1;
   let res = fib(n-1, memo) + fib(n-2, memo);
   memo[n] = res;
@@ -48,3 +48,7 @@ function fib(n, memo=[undefined, 1, 1]) {
 }
 
 //Recursion + Memoization
+//time complexitity of memoized solution
+
+//MUCH BETTER
+//O(N)
