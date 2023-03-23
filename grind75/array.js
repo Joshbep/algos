@@ -11,3 +11,10 @@
 // In terms of syntax, any variable that is declared as an array can store multiple values.
 // Almost all languages have the same comprehension of arrays but have different ways of declaring and initializing them.
 // However, three parts will always remain common in all the initializations, i.e., array name, elements, and the data type of elements.
+
+// Why do we need arrays?
+// Here, are some reasons for using arrays in data structure:
+//
+// Arrays are best for storing multiple values in a single variable
+// Arrays are better at processing many values easily and quickly
+// Sorting and searching the values is easier in arrays
