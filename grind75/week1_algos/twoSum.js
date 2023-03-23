@@ -13,17 +13,17 @@ var twoSum = function(nums, target) {
 
 console.log(twoSum([2,1,3,4], 3))
 
-//   var twoSum = function(nums, target) {
-//     let hash = {};
-//     nums.forEach((item, i) => {
-//        hash[item] = i
-//     });
-//
-//     for (let i = 0; i < nums.length; i++) {
-//         const val = target - nums[i];
-//
-//         if (hash[val] !== undefined && hash[val] !== i) {
-//             return [i, hash[val]]
-//         }
-//     }
-// };
+var twoSum = function(nums, target) {
+  let hash = {};
+  nums.forEach((item, i) => {
+    hash[item] = i
+  });
+
+  for (let i = 0; i < nums.length; i++) {
+    const val = target - nums[i];
+
+    if (hash[val] !== undefined && hash[val] !== i) {
+      return [i, hash[val]]
+    }
+  }
+};
