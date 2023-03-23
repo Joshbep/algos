@@ -24,3 +24,21 @@
 //beg      O(n)    O(n)
 //end      O(1)    O(1)
 //middle   O(n)    O(n)
+
+//time complexity
+//access O(1)
+//search O(n)
+//search (sorted array) O(log(n))
+
+//insert O(n)
+//Insertion would require shifting all the subsequent elements to the right by one and that takes O(n)
+
+//Insert (at the end) O(1)
+//Special case of insertion where no other element needs to be shifted
+
+//Remove 	O(n)
+//Removal would require shifting all the subsequent elements to the left by one and that takes O(n)
+
+//Remove (at the end) O(1) Special case of removal where no other element needs to be shifted
+
+//
