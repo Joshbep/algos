@@ -18,3 +18,9 @@
 // Arrays are best for storing multiple values in a single variable
 // Arrays are better at processing many values easily and quickly
 // Sorting and searching the values is easier in arrays
+
+//times for common operations
+//         ADD    Remove
+//beg      O(n)    O(n)
+//end      O(1)    O(1)
+//middle   O(n)    O(n)
