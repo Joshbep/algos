@@ -12,3 +12,19 @@
 //Conversely, this also means that the first element
 //that you put into the stack will always end up being
 //the last one that goes out.
+
+//time complexity
+//top/peek O(1)
+//push O(1)
+//pop O(1)
+//isEmpty O(1)
+//search O(n)
+
+//corner cases
+//Empty stack. Popping from an empty stack
+//Stack with one item
+//Stack with two items
+
+//essential questions
+// Valid Parentheses
+// Implement Queue using Stacks
