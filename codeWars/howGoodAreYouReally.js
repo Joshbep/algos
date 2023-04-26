@@ -7,7 +7,8 @@
 //
 // Note:
 // Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
-
+//time O(N)
+//space O(1)
 function betterThanAverage(classPoints, yourPoints) {
   let sum = 0;
   for (var i = 0; i < classPoints.length; i++){
