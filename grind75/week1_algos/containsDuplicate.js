@@ -24,3 +24,13 @@ var containsDuplicate = function(nums) {
   }
   return false;
 };
+
+var containsDuplicate = function(nums) {
+  const numSet = new Set();
+
+  for(n of nums){
+    if(numSet.has(n)) return true
+    numSet.add(n)
+  }
+  return false
+};
