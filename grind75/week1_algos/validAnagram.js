@@ -32,20 +32,33 @@ var isAnagram = function(s, t) {
 
 //second solution
 //time complexity O(n)
-var isAnagram = function (s, t) {
-  if(s.length !== t.length) return false
-  let sCount = {};
-  let tCount = {};
 
-  for(let i = 0; i < s.length; i++){
-    if(!sCount[s[i]]) sCount[s[i]] = 0
-    if(!tCount[t[i]]) tCount[t[i]] = 0
-    sCount[s[i]]++
-    tCount[t[i]]++
-  }
-
-  for(ch in sCount){
-    if(sCount[ch] !== tCount[ch]) return false
-  }
-  return true
+//we have two string
+//we need to cpmare the strings and check if they have the same characters
+//if the same return true
+//if not the same return false
+//length !== length return false
+//hash = {}
+//hash = {}
+//loop over
+//if not there set to 0
+//if there ++ to show that ch has that number of occurances
+//compare ch or each map
+var isAnagram = function(s, t) {
+   //compare lengths
+   if(s.length !== t.length) return false
+   //declare hash maps
+   let sCount = {};
+   let tCount = {};
+   //loop over s since both lengths are the same
+   for(let i =0; i < s.length; i++){
+       if(!sCount[s[i]]) sCount[s[i]] = 0
+       if(!tCount[t[i]]) tCount[t[i]] = 0
+       sCount[s[i]]++
+       tCount[t[i]]++
+   }
+   for(ch in sCount){
+       if(sCount[ch] !== tCount[ch]) return false
+   }
+   return true
 };
