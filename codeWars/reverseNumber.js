@@ -9,5 +9,5 @@ Example(Input => Output):
 
 function digitize(n) {
   //code here
-  reutrn n.toString().split("").reverse().map(Number)
+  return n.toString().split("").reverse().map(Number)
 }
