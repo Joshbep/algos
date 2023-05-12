@@ -62,3 +62,44 @@ var isValid = function(s) {
 // if ( in bracket
 // push ( into stack
 // so stack is [()]
+
+
+//recovered valid parens problem
+//we are given a string
+//check if valid
+//it is valid if
+//open brackets must be closed by same type of bracket
+//must be closd in correct order
+
+//we are given s = ['()']
+
+// we need a map to mape keys to values to keep track
+
+//we then need a stack
+//the idea is if we traverse s above
+//we check if the ch is in our map. it is push the val of that key onto the stack
+//when we reach the second ch we and it isn't a key we pop off stack
+//if the pop doesn't equal the ch we return
+//if it does continue until s length === 0
+var isValid = function(s) {
+    let map = {
+        "(": ")",
+        "[": "]",
+        "{": "}"
+    }
+
+    let stack = []
+
+    //loop
+    for(let c of s){
+        if(map[c]){
+            //if (, push )
+            stack.push(map[c])
+        } else {
+            //if we popped stack and got ) it should equal )
+            //if not return false
+            if(stack.pop() !== c) return false
+        }
+    }
+    return stack.length === 0
+};
