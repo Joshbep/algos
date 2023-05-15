@@ -27,6 +27,8 @@ Output: 2
 
  //this tells us there will always only be two numbers.
  // the majoirty elements is what is greater to n/2
+ //time O(n)
+ //space O(n)
 var majorityElement = function(nums) {
     let majorityElement = 0
     let map = {}
@@ -43,4 +45,27 @@ var majorityElement = function(nums) {
         }
     }
 
+};
+//time O(n)
+//space O(1)
+var majorityElement = function(nums) {
+    let majorityElement = null;
+  let count = 0;
+
+  for (let num of nums) {
+    if (majorityElement === null) {
+      majorityElement = num;
+      count = 1;
+    } else if (num === majorityElement) {
+      count++;
+    } else {
+      count--;
+    }
+
+    if (count === 0) {
+      majorityElement = null;
+    }
+  }
+
+  return majorityElement;
 };
