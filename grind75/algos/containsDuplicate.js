@@ -25,12 +25,18 @@ var containsDuplicate = function(nums) {
   return false;
 };
 
+//we are given an array of intergers so numbers
+//if value appears twice return false
+//else return true
+//I would think lets use a set
+//a set is good for unique values
+//also allows us to use .has
 var containsDuplicate = function(nums) {
-  const numSet = new Set();
+    let numSet = new Set()
 
-  for(n of nums){
-    if(numSet.has(n)) return true
-    numSet.add(n)
-  }
-  return false
-};
+    for(let n of nums){
+        if(numSet.has(n)) return true
+        numSet.add(n)
+    }
+    return false
+}
