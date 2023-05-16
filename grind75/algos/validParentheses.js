@@ -75,31 +75,34 @@ var isValid = function(s) {
 
 // we need a map to mape keys to values to keep track
 
-//we then need a stack
-//the idea is if we traverse s above
-//we check if the ch is in our map. it is push the val of that key onto the stack
-//when we reach the second ch we and it isn't a key we pop off stack
-//if the pop doesn't equal the ch we return
-//if it does continue until s length === 0
+//we are given a string
+//determine if the input string is valid
+//it is valid if the opening bracket is closed by the cprrect closing bracket
+//we can use a map to map the key of an opening bracket to the value of the closing
+//we need to loop over s and see if the characters are in bracket
+//to do this we can use a stack
+//it follows LIFO principles last in first out
+// we would declare an array to push in the value, if brackets contains ch
+//if it doesn't contain ch we pop and compare
 var isValid = function(s) {
-    let map = {
-        "(": ")",
-        "[": "]",
-        "{": "}"
+    let brackets = {
+        "(":")",
+        "[":"]",
+        "{":"}"
     }
 
     let stack = []
-
-    //loop
-    for(let c of s){
-        if(map[c]){
-            //if (, push )
-            stack.push(map[c])
+    //[()]
+    for(let ch of s){
+        //if brackets has (, push )
+        if(brackets[ch]){
+            stack.push(brackets[ch])
         } else {
-            //if we popped stack and got ) it should equal )
-            //if not return false
-            if(stack.pop() !== c) return false
+            //when we get to ), brackets doesn't have this as a key
+            //we pop the stack which is ) and if ch isn't ) we return false
+            //if it does we continue
+            if(stack.pop() !== ch) return false
         }
     }
-    return stack.length === 0
-};
+    if(stack.length === 0) return true
+}
