@@ -14,6 +14,7 @@ All arrays or lists will always have at least one element, so you don't need to 
 */
 
 //time 0(1)
+//space 0(1)
 function minMax(arr){
   let min = Math.min(...arr)
   let max = Math.max(...arr)
