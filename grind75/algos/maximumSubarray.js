@@ -31,10 +31,6 @@ Constraints:
 Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 */
 
-/**
- * @param {number[]} nums
- * @return {number}
- */
 // var maxSubArray = function(nums) {
 //   let maxSum = -Infinity;
 
@@ -49,13 +45,38 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 
 //   return maxSum;
 // };
+//given an array of intergers
+//we want to traverse this array and bascially find the sum of subarrays returen the max sum of subarrays
 
+//first way to solve
+//two for loops
+//decalre max sum to -Infinity bc all numnbers will be larger than -Infinity
+//the start first for loop
+//declare current sum
+//start second for loop
+//update current sum to += nums[j]
+//so like
+//currentSum += nums[j]
+//set maxSum = Math.max(currentSum, MaxSum)
+
+
+//second solution use Kadans algo solution
+//uses hints of dynamic programming to find sum of sub arrays
+
+//start out by setting maxSum and CurrentSum equal to index 0 in nums array
+//The algorithm starts by initializing maxSum and currentSum to the value of the first element in the nums array
+//loop through nums array but start at i =1
+//update current sum to
+//Math.max(nums[i], currentSum + nums[i])
+//this helps us know to start a new sub array or continue on
+//we update maxSum to hold the new max sum of sub arrays like this
+//maxSum = Math.max(currentSum, maxSum)
 var maxSubArray = function(nums) {
   let maxSum = nums[0]
   let currentSum = nums[0]
 
   for(let i = 1; i < nums.length; i++){
-      currentSum = Math.max(nums[i], currentSum + nums[i])
+      currentSum = Math.max(nums[i], nums[i] + currentSum)
       maxSum = Math.max(currentSum, maxSum)
   }
   return maxSum
