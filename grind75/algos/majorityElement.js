@@ -48,24 +48,41 @@ var majorityElement = function(nums) {
 };
 //time O(n)
 //space O(1)
+//create variable for majoirty nums = null
+//create count to keep track
+
+//use a for loop for nums
+//see if majoirty element = null
+//if so set it to num
+
 var majorityElement = function(nums) {
-    let majorityElement = null;
-  let count = 0;
+//decalre majorityElement
+    let majorityElement = null
+//declare count
+    let count = 0
 
-  for (let num of nums) {
-    if (majorityElement === null) {
-      majorityElement = num;
-      count = 1;
-    } else if (num === majorityElement) {
-      count++;
-    } else {
-      count--;
+//for of loop
+    for(let num of nums){
+//if = null set majoirty
+//count = 1
+        if(majorityElement === null){
+           majorityElement = num
+           count = 1
+        } else if(majorityElement === num){
+            //else if majority = num
+            //count++
+            count++
+        } else {
+            //else
+            //count --
+            count--
+        }
+    }
+    //if count === 0
+    //majority = null
+    if(count === 0){
+       majorityElement = null
     }
 
-    if (count === 0) {
-      majorityElement = null;
-    }
-  }
-
-  return majorityElement;
+    return majorityElement
 };
