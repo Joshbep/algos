@@ -11,3 +11,5 @@ function maps(x){
     return num * 2
   })
 }
+
+//solution
