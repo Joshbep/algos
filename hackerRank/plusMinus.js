@@ -81,20 +81,24 @@ function readLine() {
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-function plusMinus(arr) {
-    // Write your code here
-    let positiveCount = 0
-    let negativeCount = 0
-    let zeroCount = 0
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] > 0) positiveCount++
-        if(arr[i] < 0) negativeCount++
-        if(arr[i] === 0) zeroCount++
-    }
-    console.log(positiveCount/arr.length)
-    console.log(negativeCount/arr.length)
-    console.log(zeroCount/arr.length)
-}
+ function plusMinus(arr) {
+     // Write your code here
+     let positiveCount = 0
+     let negativeCount = 0
+     let zeroCount = 0
+     for(let i = 0; i < arr.length; i++){
+         if(arr[i] > 0) {
+             positiveCount++
+         } else if(arr[i] < 0){
+           negativeCount++
+         } else if(arr[i] === 0){
+             zeroCount++
+         }
+     }
+     console.log(positiveCount/arr.length)
+     console.log(negativeCount/arr.length)
+     console.log(zeroCount/arr.length)
+ }
 
 function main() {
     const n = parseInt(readLine().trim(), 10);
