@@ -59,3 +59,15 @@ given two strings, write a method to decide if one is a permutation of the other
 // }
 
 // console.log(permutation("grow", "rowg"))
+
+
+/*
+write a method to replace all spaces in a string with "%20" you may assume that the string has sufficient space at the end to hold 
+the additional characters, and that you are given the "true" length of the string
+*/
+function strFunc(str){
+    let newStr = str.split(" ").join("%20")
+    return newStr
+}
+
+console.log(strFunc("gro up boo  "))
