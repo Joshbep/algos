@@ -17,3 +17,5 @@ function count(string) {
   }
   return count;
 }
+
+//solution
