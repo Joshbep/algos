@@ -41,17 +41,21 @@
 //create a map
 //loop over nums
 //compare
+
 var twoSum = function(nums, target) {
-  let hash = {};
-  nums.forEach((item, i) => {
-    hash[item] = i
-  });
+  let hash = {}
 
-  for (let i = 0; i < nums.length; i++) {
-    const val = target - nums[i];
+  nums.forEach((num, i) => {
+      if(!hash[num]) hash[num] = i
+      //[3, 1, 2]
+      //3: 0, 2: 1, 3: 2
+  })
 
-    if (hash[val] !== undefined && hash[val] !== i) {
-      return [i, hash[val]]
-    }
+  for(let i = 0; i < nums.length; i++){
+      let val = target - nums[i]
+
+      if(hash[val] !== undefined && hash[val] !== i){
+          return [hash[val], i]
+      }
   }
-};
+}
